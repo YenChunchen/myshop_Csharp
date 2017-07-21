@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CartsModelStoreContainer" CdmEntityContainer="CartsEntities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.Product)">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="商品編號" ColumnName="商品編號" />
+          <ScalarProperty Name="商品名稱" ColumnName="商品名稱" />
+          <ScalarProperty Name="商品類別" ColumnName="商品類別" />
+          <ScalarProperty Name="類別編號" ColumnName="類別編號" />
+          <ScalarProperty Name="製造日期" ColumnName="製造日期" />
+          <ScalarProperty Name="商品描述" ColumnName="商品描述" />
+          <ScalarProperty Name="價格" ColumnName="價格" />
+          <ScalarProperty Name="是否庫存" ColumnName="是否庫存" />
+          <ScalarProperty Name="商品圖" ColumnName="商品圖" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Myorders">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.Myorder)">
+        <MappingFragment StoreEntitySet="Myorders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RecieverName" ColumnName="RecieverName" />
+          <ScalarProperty Name="RecieverPhone" ColumnName="RecieverPhone" />
+          <ScalarProperty Name="RecieverAddress" ColumnName="RecieverAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyorderDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.MyorderDetail)">
+        <MappingFragment StoreEntitySet="MyorderDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyorderId" ColumnName="MyorderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="stuff" ColumnName="stuff" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductComments">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.ProductComment)">
+        <MappingFragment StoreEntitySet="ProductComments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="會員編號" ColumnName="會員編號" />
+          <ScalarProperty Name="留言內容" ColumnName="留言內容" />
+          <ScalarProperty Name="留言時間" ColumnName="留言時間" />
+          <ScalarProperty Name="留言產品編號" ColumnName="留言產品編號" />
+          <ScalarProperty Name="會員名稱" ColumnName="會員名稱" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

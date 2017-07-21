@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CartsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CartsModelStoreContainer">
+    <EntitySet Name="Products" EntityType="CartsModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Myorders" EntityType="CartsModel.Store.Myorders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyorderDetails" EntityType="CartsModel.Store.MyorderDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductComments" EntityType="CartsModel.Store.ProductComments" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="MyorderMyorderDetail" Association="CartsModel.Store.MyorderMyorderDetail">
+      <End Role="Myorder" EntitySet="Myorders" />
+      <End Role="MyorderDetail" EntitySet="MyorderDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="商品編號" />
+    </Key>
+    <Property Name="商品編號" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="商品名稱" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="商品類別" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="類別編號" Type="int" Nullable="true" />
+    <Property Name="製造日期" Type="datetime" Nullable="false" />
+    <Property Name="商品描述" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="價格" Type="decimal" Nullable="false" />
+    <Property Name="是否庫存" Type="bit" Nullable="false" />
+    <Property Name="商品圖" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Myorders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecieverName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecieverPhone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecieverAddress" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyorderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyorderId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="price" Type="decimal" Nullable="false" />
+    <Property Name="stuff" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductComments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="會員編號" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="留言內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="留言時間" Type="datetime" Nullable="false" />
+    <Property Name="留言產品編號" Type="int" Nullable="false" />
+    <Property Name="會員名稱" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="MyorderMyorderDetail">
+    <End Role="Myorder" Type="CartsModel.Store.Myorders" Multiplicity="1" />
+    <End Role="MyorderDetail" Type="CartsModel.Store.MyorderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Myorder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyorderDetail">
+        <PropertyRef Name="MyorderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

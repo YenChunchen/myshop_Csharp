@@ -1,0 +1,80 @@
+﻿@model myshop.Models.Product
+
+@{
+    ViewBag.Title = "刪除";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div><h2>是否將<span>[@Html.DisplayFor(model => model.商品名稱)]刪除?</span></h2></div>
+
+<h3 class="text-danger">Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.商品名稱)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.商品名稱)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.商品類別)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.商品類別)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.類別編號)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.類別編號)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.製造日期)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.製造日期)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.商品描述)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.商品描述)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.價格)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.價格)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.是否庫存)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.是否庫存)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("回到商品管理", "Index")
+        </div>
+    }
+</div>

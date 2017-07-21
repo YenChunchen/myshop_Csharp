@@ -1,0 +1,51 @@
+﻿@model IEnumerable<myshop.Models.Myorder>
+
+@{
+    ViewBag.Title = "membercurrentorder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2> @ViewBag.Name 的訂單</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            訂單編號
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecieverName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecieverPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecieverAddress)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieverName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieverPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieverAddress)
+        </td>
+        <td>
+            @Html.ActionLink("訂單內容", "MemberDetails", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+
+

@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNet.Identity;
+@model List<myshop.Models.Product>
+
+@{
+    ViewBag.Title = "RJ拍賣首頁";
+    var UserName = User.Identity.Name;
+    var UserID = User.Identity.GetUserId();
+}
+<body background="Home/Disney/disney background.jpg">
+    <div class="jumbotron" style="background-image:url(Home/Disney/micky.jpg);background-size:contain;background-repeat:no-repeat;background-size:1200px 350px">
+        <h1 class="text-center">123拍賣</h1>
+        <h1 class="text-center">簡單管理  簡單賣</h1>
+        <h2 class="text-center"><font size="2">@Html.ActionLink("如圖片未顯示請點此", "Index", "Home", new { @class = "btn btn-sm" })</font></h2>
+    </div>
+
+    <div class="row" >
+        @foreach (var pro in this.Model)
+        {
+            int a = @pro.商品編號;  //宣告區域變數a，存放該商品編號
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    @*可用class="thumbnail"快取縮圖*@
+                    <img src="@pro.商品圖" alt="商品圖" width="200" height="200">
+                    <div >
+                        <h3>@pro.商品名稱</h3>
+                        <p>@pro.商品描述</p>
+                        <p>售價 : @pro.價格</p>
+                        <p>庫存 : @pro.是否庫存</p>
+                        <p>
+                            <a onclick="Buyit(@pro.商品編號)" @*點擊執行購物車JS中的Buyit方法*@ class="btn btn-primary" role="button">加入購物車</a>
+                            <a href="@Url.Action("ProductDetail","Home",new { id = a } )" class="btn btn-default" role="button">詳細資訊</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</body>

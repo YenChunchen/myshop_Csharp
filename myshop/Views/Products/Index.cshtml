@@ -1,0 +1,90 @@
+﻿@model IEnumerable<myshop.Models.Product>
+
+@{
+    ViewBag.Title = "商品管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><font size="6">商品管理</font></h2>
+<p class="text-danger">@ViewBag.create</p>
+<p1 class="text-danger">@ViewBag.editnotfound</p1>
+
+<div>
+    @Html.ActionLink("新增商品", "Create", new { }, new { @class = "btn btn-default" })
+</div>
+<div>
+    @using (Html.BeginForm("Index", "Products", FormMethod.Get))  //
+    {
+        <aa><font size="2">搜尋商品名稱:</font>@Html.TextBox("search")</aa>
+        //建立TextBox物件，輸入值=search帶入Index中，格式:<aa>Name:@Html.TextBox("名稱須和Index引入字串相同")</aa>
+        <bb><font size="2">搜尋商品類別:</font>@Html.DropDownList("Gren", "全部")</bb>
+        //建立DropDownList物件，選取值=search帶入Index中，格式:<bb>Gre:@Html.DropDownList("名稱須和Index引入字串相同","預設顯示值")</bb>
+        <input type="submit" value="確定">
+    }
+</div>
+<table class="table" style="background-color:white">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.商品圖)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.商品名稱)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.商品類別)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.類別編號)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.製造日期)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.商品描述)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.價格)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.是否庫存)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="@item.商品圖" height="60" width="60" onload="resizeImage()" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.商品名稱)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.商品類別)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.類別編號)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.製造日期)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.商品描述)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.價格)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.是否庫存)
+        </td>
+
+        <td class="Button">
+            @Html.ActionLink("修改", "Edit", new { id=item.商品編號 }, new { @class = "btn btn-default" } ) |
+            @Html.ActionLink("細項", "Details", new { id=item.商品編號 },new { @class="btn btn-default"}) |
+            @Html.ActionLink("刪除", "Delete", new { id=item.商品編號 },new { @class="btn btn-default"})
+        </td>
+    </tr>
+}
+
+</table>

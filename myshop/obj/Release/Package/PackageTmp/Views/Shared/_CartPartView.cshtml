@@ -1,0 +1,36 @@
+﻿@{ 
+    //取得購物車內容
+    var currentcart = myshop.Models.Cart.Operation.GetCurrentCart();
+}
+
+<a id="CartDropDown" class="dropdown-toggle" data-toggle="dropdown">  @*切換下拉選單*@
+    @String.Format("共{0}元 ({1})",currentcart.totalamount,currentcart.totalcount)  @*顯示購物車總計、數量*@
+    <span class="caret"></span> @*插入符號*@
+</a>
+
+<ul class="dropdown-menu " role="menu" aria-labelledby="CartDropDown">
+    @if (currentcart.Count() > 0) //判斷購物車中是否有商品
+    {
+        foreach (var item in currentcart)  //依序顯示購買項目資訊
+        {
+            <li>
+                <span class="text-center">@item.商品名稱 X [@item.購買數量]  @item.商品小計 </span>
+                <span class="btn btn-danger text-right btn-xs " onclick="Removeit('@item.商品編號')"> X </span>
+            </li>
+        }
+        <li class="divider"></li> @*分隔線*@
+        <li>
+            <a href="@Url.Action("Index","order",new { })" class="btn btn-success text-center ">結帳</a>
+        </li>
+        <li>
+            <a onclick="Removeall()" class="btn btn-danger text-center ">清空</a>
+        </li>
+
+            }
+            else   //如購物車中無商品
+            {
+<li><p class="text-center">購物車無任何商品</p></li>
+    }
+
+</ul>
+

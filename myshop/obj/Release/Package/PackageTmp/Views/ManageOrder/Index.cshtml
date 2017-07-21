@@ -1,0 +1,60 @@
+﻿@model IEnumerable<myshop.Models.Myorder>
+
+@{
+    ViewBag.Title = "訂單管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><font size="6">訂單管理</font></h2>
+<div>
+@using (Html.BeginForm("Index","ManageOrder", FormMethod.Get))  
+//使用BeginForm，將表單內容指向ManageOrder/Index，Http request:HTTPGET
+{
+    <aa><font size="2">訂單編號:</font>@Html.TextBox("searchid")</aa>  //回傳值searchid=輸入內容
+    <input type="submit" value="搜尋訂單編號">  
+}
+</div>
+
+<table class="table" style="background-color:white">
+    <tr>
+        <th>訂單編號</th>
+        <th>會員名稱</th>
+        <th>收貨人姓名</th>
+        <th>收貨人電話</th>
+        <th>收貨人地址</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @{ 
+                myshop.Models.UserEntities db2 = new myshop.Models.UserEntities();
+                var userid = item.UserId;
+                var username = (from u in db2.AspNetUsers
+                                where u.Id == userid
+                                select u.UserName).FirstOrDefault();
+            }
+            @username
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieverName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieverPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieverAddress)
+        </td>
+        <td>
+            @Html.ActionLink("修改訂單", "Edit", new { id = item.Id },new { @class="btn btn-default"}) |
+            @Html.ActionLink("商品明細", "Details", new { id = item.Id }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("刪除訂單", "Delete", new { id = item.Id }, new { @class = "btn btn-default" })
+        </td>
+    </tr>
+}
+
+</table>

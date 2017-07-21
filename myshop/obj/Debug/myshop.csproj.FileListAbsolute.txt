@@ -1,0 +1,253 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\ApplicationInsights.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\csc.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\vbc.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\myshop.dll.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\myshop.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\myshop.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Antlr3.Runtime.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.Web.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Owin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Helpers.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Mvc.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Optimization.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Razor.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.WebPages.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\WebGrease.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.Web.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Helpers.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Mvc.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Optimization.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.Razor.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.WebPages.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Antlr3.Runtime.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Newtonsoft.Json.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.Helpers.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.Mvc.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.Optimization.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.Razor.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.WebPages.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\EntityFramework.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.Security.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\bin\zh-Hant\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\obj\Debug\myshop.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\myshop\myshop\obj\Debug\myshop.pdb
+C:\Users\user\documents\visual studio 2015\Projects\myshop\myshop\obj\Debug\myshop.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ApplicationInsights.config
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\csc.exe
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\myshop.dll.config
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\myshop.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\myshop.pdb
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\EntityFramework.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.Web.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Data.Edm.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Data.OData.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Data.Services.Client.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Owin.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Spatial.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\WebGrease.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\MonAgentListener.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.Web.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Data.Edm.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Data.OData.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Data.Services.Client.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Spatial.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\EntityFramework.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\de\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\es\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\fr\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\it\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ja\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ko\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\ru\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.Helpers.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.Mvc.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.Optimization.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.Razor.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.WebPages.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\EntityFramework.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.Security.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\bin\zh-Hant\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\obj\Debug\myshop.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\myshop\myshop_final\myshop\obj\Debug\myshop.dll
+C:\Users\user\Desktop\myshop\myshop_final\myshop\obj\Debug\myshop.pdb

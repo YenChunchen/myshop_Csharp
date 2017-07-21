@@ -1,0 +1,99 @@
+﻿@model myshop.Models.Product
+
+@{
+    ViewBag.Title = "商品內容";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    myshop.Models.CartsEntities db2 = new myshop.Models.CartsEntities();
+    var img = (from i in db2.Products
+               where i.商品編號 == this.Model.商品編號
+               select i).FirstOrDefault();
+    string jpg = ".jpg";
+}
+
+<h2>商品[@Html.DisplayFor(model => model.商品名稱)]</h2>
+<div>
+    <img src="~/Home/images/@img.商品名稱@jpg" height="120" width="120" />
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.商品名稱)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.商品名稱)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.商品類別)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.商品類別)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.類別編號)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.類別編號)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.製造日期)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.製造日期)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.商品描述)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.商品描述)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.價格)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.價格)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.是否庫存)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.是否庫存)
+        </dd>
+
+    </dl>
+        @{
+            var commentlist = new List<myshop.Models.ProductComment>();
+            myshop.Models.CartsEntities db = new myshop.Models.CartsEntities();
+            commentlist = (from cm in db.ProductComments
+                           where cm.留言產品編號 == this.Model.商品編號
+                           select cm).ToList();
+        }
+      <dl style="background-color:floralwhite">
+            <dt>商品留言:
+            <dt>
+                @foreach (var cm in commentlist)
+                {
+                <dt>@cm.會員編號</dt>
+                <dd>@cm.留言內容          (@cm.留言時間)</dd>
+                }
+      </dl>
+</div>
+
+
+<div data-role="footer" data-position="fixed" class="btn btn-default">
+    <div data-role="navbar">
+        @Html.ActionLink("回上頁", "Index", "Order")
+    </div>
+</div>
+

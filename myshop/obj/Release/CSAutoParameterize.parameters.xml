@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-myshop-20160929020143.mdf;Initial Catalog=aspnet-myshop-20160929020143;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\documents\\visual\ studio\ 2015\\Projects\\myshop\\myshop\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Carts-Web.config Connection String" description="Carts 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="data source=RAY\SQLEXPRESS;initial catalog=Carts;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\documents\\visual\ studio\ 2015\\Projects\\myshop\\myshop\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Carts']/@connectionString" />
+  </parameter>
+  <parameter name="CartsEntities-Web.config Connection String" description="CartsEntities 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Models.Carts..csdl|res://*/Models.Carts..ssdl|res://*/Models.Carts..msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=RAY\SQLEXPRESS;initial catalog=Carts;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\documents\\visual\ studio\ 2015\\Projects\\myshop\\myshop\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CartsEntities']/@connectionString" />
+  </parameter>
+  <parameter name="UserEntities-Web.config Connection String" description="UserEntities 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Models.User.csdl|res://*/Models.User.ssdl|res://*/Models.User.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDb)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\aspnet-myshop-20160929020143.mdf;initial catalog=aspnet-myshop-20160929020143;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\documents\\visual\ studio\ 2015\\Projects\\myshop\\myshop\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserEntities']/@connectionString" />
+  </parameter>
+</parameters>

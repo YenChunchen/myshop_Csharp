@@ -1,0 +1,55 @@
+﻿@model IEnumerable<myshop.Models.AspNetUsers>
+
+@{
+    ViewBag.Title = "會員管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+<h2><font size="6">會員管理</font></h2>
+
+<div>
+    @using (Html.BeginForm("Index", "AspNetUsers", FormMethod.Get))
+    {
+        <aa><font size="2">使用者名稱:</font>@Html.TextBox("searchusername")</aa>
+        <input type="submit" value="搜尋使用者名稱">
+    }
+</div>
+<table class="table" style="background-color:white;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("變更密碼", "ChangePassword", "Manage")
+        </td>
+        <td>
+            @Html.ActionLink("修改", "Edit", new { id=item.Id },new { @class="btn btn-default"}) |
+            @Html.ActionLink("細項", "Details", new { id=item.Id }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("刪除", "Delete", new { id=item.Id }, new { @class = "btn btn-default" })
+        </td>
+    </tr>
+}
+
+</table>
+</body>

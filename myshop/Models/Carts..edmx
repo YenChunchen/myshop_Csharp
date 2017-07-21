@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CartsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CartsModelStoreContainer">
+    <EntitySet Name="Products" EntityType="CartsModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Myorders" EntityType="CartsModel.Store.Myorders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyorderDetails" EntityType="CartsModel.Store.MyorderDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductComments" EntityType="CartsModel.Store.ProductComments" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="MyorderMyorderDetail" Association="CartsModel.Store.MyorderMyorderDetail">
+      <End Role="Myorder" EntitySet="Myorders" />
+      <End Role="MyorderDetail" EntitySet="MyorderDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="商品編號" />
+    </Key>
+    <Property Name="商品編號" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="商品名稱" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="商品類別" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="類別編號" Type="int" Nullable="true" />
+    <Property Name="製造日期" Type="datetime" Nullable="false" />
+    <Property Name="商品描述" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="價格" Type="decimal" Nullable="false" />
+    <Property Name="是否庫存" Type="bit" Nullable="false" />
+    <Property Name="商品圖" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Myorders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecieverName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecieverPhone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecieverAddress" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyorderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyorderId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="price" Type="decimal" Nullable="false" />
+    <Property Name="stuff" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductComments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="會員編號" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="留言內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="留言時間" Type="datetime" Nullable="false" />
+    <Property Name="留言產品編號" Type="int" Nullable="false" />
+    <Property Name="會員名稱" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="MyorderMyorderDetail">
+    <End Role="Myorder" Type="CartsModel.Store.Myorders" Multiplicity="1" />
+    <End Role="MyorderDetail" Type="CartsModel.Store.MyorderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Myorder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyorderDetail">
+        <PropertyRef Name="MyorderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CartsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CartsEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Products" EntityType="CartsModel.Product" />
+          <EntitySet Name="Myorders" EntityType="CartsModel.Myorder" />
+          <EntitySet Name="MyorderDetails" EntityType="CartsModel.MyorderDetail" />
+          <AssociationSet Name="MyorderMyorderDetail" Association="CartsModel.MyorderMyorderDetail">
+            <End Role="Myorder" EntitySet="Myorders" />
+            <End Role="MyorderDetail" EntitySet="MyorderDetails" />
+          </AssociationSet>
+          <EntitySet Name="ProductComments" EntityType="CartsModel.ProductComment" />
+        </EntityContainer>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="商品編號" />
+          </Key>
+          <Property Name="商品編號" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="商品名稱" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="商品類別" Type="String" Nullable="true" />
+          <Property Name="類別編號" Type="Int32" Nullable="true" />
+          <Property Name="製造日期" Type="DateTime" Nullable="false" />
+          <Property Name="商品描述" Type="String" Nullable="true" />
+          <Property Name="價格" Type="Decimal" Nullable="false" />
+          <Property Name="是否庫存" Type="Boolean" Nullable="false" />
+          <Property Name="商品圖" Type="String" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Myorder">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="MyorderDetail" Relationship="CartsModel.MyorderMyorderDetail" FromRole="Myorder" ToRole="MyorderDetail" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+          <Property Name="RecieverName" Type="String" Nullable="false" />
+          <Property Name="RecieverPhone" Type="String" Nullable="false" />
+          <Property Name="RecieverAddress" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MyorderDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Myorder" Relationship="CartsModel.MyorderMyorderDetail" FromRole="MyorderDetail" ToRole="Myorder" />
+          <Property Name="MyorderId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="price" Type="Decimal" Nullable="false" />
+          <Property Name="stuff" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="MyorderMyorderDetail">
+          <End Type="CartsModel.Myorder" Role="Myorder" Multiplicity="1" />
+          <End Type="CartsModel.MyorderDetail" Role="MyorderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Myorder">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyorderDetail">
+              <PropertyRef Name="MyorderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ProductComment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="會員編號" Type="String" Nullable="false" />
+          <Property Name="留言內容" Type="String" Nullable="false" />
+          <Property Name="留言時間" Type="DateTime" Nullable="false" />
+          <Property Name="留言產品編號" Type="Int32" Nullable="false" />
+          <Property Name="會員名稱" Type="String" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CartsModelStoreContainer" CdmEntityContainer="CartsEntities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.Product)">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="商品編號" ColumnName="商品編號" />
+          <ScalarProperty Name="商品名稱" ColumnName="商品名稱" />
+          <ScalarProperty Name="商品類別" ColumnName="商品類別" />
+          <ScalarProperty Name="類別編號" ColumnName="類別編號" />
+          <ScalarProperty Name="製造日期" ColumnName="製造日期" />
+          <ScalarProperty Name="商品描述" ColumnName="商品描述" />
+          <ScalarProperty Name="價格" ColumnName="價格" />
+          <ScalarProperty Name="是否庫存" ColumnName="是否庫存" />
+          <ScalarProperty Name="商品圖" ColumnName="商品圖" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Myorders">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.Myorder)">
+        <MappingFragment StoreEntitySet="Myorders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RecieverName" ColumnName="RecieverName" />
+          <ScalarProperty Name="RecieverPhone" ColumnName="RecieverPhone" />
+          <ScalarProperty Name="RecieverAddress" ColumnName="RecieverAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyorderDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.MyorderDetail)">
+        <MappingFragment StoreEntitySet="MyorderDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyorderId" ColumnName="MyorderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="stuff" ColumnName="stuff" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductComments">
+      <EntityTypeMapping TypeName="IsTypeOf(CartsModel.ProductComment)">
+        <MappingFragment StoreEntitySet="ProductComments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="會員編號" ColumnName="會員編號" />
+          <ScalarProperty Name="留言內容" ColumnName="留言內容" />
+          <ScalarProperty Name="留言時間" ColumnName="留言時間" />
+          <ScalarProperty Name="留言產品編號" ColumnName="留言產品編號" />
+          <ScalarProperty Name="會員名稱" ColumnName="會員名稱" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
